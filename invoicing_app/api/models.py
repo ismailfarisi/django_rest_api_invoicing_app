@@ -1,6 +1,8 @@
+from re import I
 from django.db import models
 
 
+DATE_INPUT_FORMATS = ['%d-%m-%Y']
 
 class Company(models.Model):
     id = models.IntegerField(primary_key=True,auto_created=True)

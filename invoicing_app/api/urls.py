@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns =[
     path('',views.getRoutes),
-    path('invoice/',views.getInvoice),
+    path('invoice/',views.InvoiceList.as_view()),
 ]
